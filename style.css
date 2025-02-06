@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    background-color: #151515;
+    display: grid;
+    place-items: center;
+}
+
+section .loader {
+    position: relative;
+    width: 25px;
+    aspect-ratio: 1/1;
+    margin: auto;
+}
+
+
+section .loader .ball {
+    position: absolute;
+    width: 25px;
+    aspect-ratio: 1/1;
+    /* border-radius: 50%; */
+}
+
+section .loader .upper {
+    left: 0px;
+    top: -25px;
+    background-color: yellow;
+    animation: upper 1s infinite;
+    -webkit-animation: upper 1s infinite;
+}
+
+section .loader .right {
+    right: -25px;
+    background-color: rgb(0, 30, 255);
+    animation: right 1s infinite;
+    -webkit-animation: right 1s infinite;
+}
+
+section .loader .bottom {
+    bottom: -25px;
+    background-color: rgb(255, 38, 0);
+    animation: bottom 1s infinite;
+    -webkit-animation: bottom 1s infinite;
+}
+
+section .loader .left {
+    left: -25px;
+    background-color: rgb(0, 255, 85);
+    animation: left 1s infinite;
+    -webkit-animation: left 1s infinite;
+}
+
+@keyframes upper {
+    50% {
+        top: 0px;
+        border-radius: 50%;
+    }
+}
+
+@keyframes right {
+    50% {
+        right: 0;
+        border-radius: 50%;
+    }
+}
+
+@keyframes bottom {
+    50% {
+        bottom: 0;
+        border-radius: 50%;
+    }
+}
+
+@keyframes left {
+    50% {
+        left: 0;
+        border-radius: 50%;
+    }
+}
